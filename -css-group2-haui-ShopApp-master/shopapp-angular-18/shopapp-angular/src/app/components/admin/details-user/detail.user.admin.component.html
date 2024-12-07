@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>User Details</h1>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <h3>User Information</h3>
+      <p><strong>User ID:</strong> {{ userResponse.id }}</p>
+        <div class="form-group">
+            <label for="fullname"><strong>Full Name:</strong></label>
+            <input type="text" class="form-control" id="fullname" [(ngModel)]="userResponse.fullname" name="fullname" />
+          </div>
+          <div class="form-group">
+            <label for="phone_number"><strong>Phone Number:</strong></label>
+            <input type="text" class="form-control" id="phone_number" [(ngModel)]="userResponse.phone_number" name="phone_number" />
+          </div>
+          <div class="form-group">
+            <label for="address"><strong>Address:</strong></label>
+            <input type="text" class="form-control" id="address" [(ngModel)]="userResponse.address" name="address" />
+          </div>
+      <p><strong>Date of Birth:</strong> {{ userResponse.date_of_birth | date }}</p>
+      <p><strong>Role:</strong> {{ userResponse.role?.name }}</p>
+      <p><strong>Account Status:</strong> {{ userResponse.is_active ? 'Active' : 'Inactive' }}</p>
+      <p><strong>Created At:</strong> {{ userResponse.created_at | date }}</p>
+      <p><strong>Updated At:</strong> {{ userResponse.updated_at | date }}</p>     
+      <div class="form-group">
+        <label for="statusSelect"><strong>Status:</strong></label>
+        <select class="form-control" id="statusSelect" 
+          [(ngModel)]="userResponse.is_active">
+          <option value="1">Active</option>
+          <option value="0">Inactive</option>
+        </select>
+      </div>          
+    </div>  
+  </div>
+
+  <button class="btn btn-primary col-md-2" 
+    (click)="saveUser()">Save</button>
+</div>

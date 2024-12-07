@@ -1,0 +1,128 @@
+@import '../../styles/shared-styles.scss';
+
+.container {
+    color: white;
+    height: 100vh;
+}
+
+.text-center {
+    color: #1939bc;
+}
+
+.login-form {
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    border: 1px solid rgb(32, 34, 60);
+    align-items: center;
+    justify-content: center;
+}
+
+.login-header {
+    text-align: center;
+    color: #1939bc;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: white;
+    border: none;
+    color: #1939bc;
+}
+
+.form-control:focus {
+    color: #1939bc;
+    background-color: #a1b1ef;
+    outline: none;
+    border-color: transparent;
+}
+
+.divider-nospace {
+    border-top: 1px solid white;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: $shopapp-title-color;
+    cursor: pointer;
+}
+
+.checkbox-text {
+    color: rgb(243, 165, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Màu checkbox khi được chọn */
+.checkbox-text input[type="checkbox"]:checked {
+    border-color: white;
+    background-color: #1939bc;
+}
+
+.label-lg {
+    color: #1939bc;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.register-link {
+    color: #1939bc;
+}
+
+.access-right {
+    margin-top: 20px;
+    width: 200px;
+    color: #1939bc;
+    background-color: white !important;
+    border: 1px solid #1939bc;
+}
+
+.access-right:focus {
+    border: 1px solid white;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(243, 165, 42, 0.4);
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(243, 165, 42, 0.4);
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(243, 165, 42, 0.4);
+}
+
+.login-button {
+    background: #1939bc;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+}
+
+.divider {
+    height: 1px;
+    background-color: #1939bc;
+    /* background-color: rgb(105, 244, 181) */
+    margin: 20px;
+}

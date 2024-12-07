@@ -1,0 +1,86 @@
+@import '../../styles/shared-styles.scss';
+
+.container {
+    color: white;
+}
+
+.header-title {
+    color: #1939bc
+}
+
+.intro-section {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.option-text {
+    color: #1939bc;
+}
+
+.product-header {
+    color: #1939bc;
+}
+
+.form-control {
+    background-color: #fcfcfc;
+    border: 1px solid rgb(255, 255, 255);
+    color: #1939bc;
+}
+
+.form-control:focus {
+    border-color: white;
+    background-color: #fcfcfc;
+}
+
+.form-label {
+    color: #1939bc;
+}
+
+.product-order {
+    color: #1939bc;
+}
+
+.table-title {
+    color: #1939bc;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border-collapse: separate;
+    border: 5px solid #fcfcfc;
+    border-spacing: 0;
+    background-color: #fcfcfc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.product-name {
+    color: #1939bc;
+    margin-right: 10px;
+}
+
+.btn-gradient {
+    background: #1939bc;
+    color: white;
+    border-radius: 30px;
+    width: 200px;
+}

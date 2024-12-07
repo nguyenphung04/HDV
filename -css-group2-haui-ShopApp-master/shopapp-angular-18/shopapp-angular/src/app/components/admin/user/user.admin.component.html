@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <h1>Users</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Full Name</th>
+          <th>Phone Number</th>
+          <th>Address</th>
+          <th>Date of birth</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>
+            {{ user.id }}</td>
+          <td>{{ user.fullname }}</td>
+          <td>{{ user.phone_number }}</td>
+          <td>{{ user.address }}</td>
+          <td>{{ user.date_of_birth }}</td>
+          <td>{{ user.is_active ? 'Active' : 'Inactive' }}</td>
+          <td>
+            <div style="display: flex; gap: 10px;">
+              <button (click)="viewDetails(user)" class="btn btn-primary" style="white-space: nowrap;">
+                View Details
+              </button>
+              <button class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button>
+            </div>
+          </td>
+  
+        </tr>
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item" *ngIf="currentPage > 0">
+            <a class="page-link" (click)="onPageChange(1)">First</a>
+          </li>
+          <li class="page-item" *ngIf="currentPage > 0">
+            <a class="page-link" (click)="onPageChange(currentPage)">Previous</a>
+          </li>
+          <ng-container *ngFor="let page of visiblePages">
+            <li class="page-item" [ngClass]="{'active': page === currentPage + 1}">
+              <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+            </li>
+          </ng-container>
+          <li class="page-item" *ngIf="currentPage < totalPages -1 ">
+            <a class="page-link" (click)="onPageChange(currentPage + 2)">Next</a>
+          </li>
+          <li class="page-item" *ngIf="currentPage < totalPages -1">
+            <a class="page-link" (click)="onPageChange(totalPages)">Last</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>

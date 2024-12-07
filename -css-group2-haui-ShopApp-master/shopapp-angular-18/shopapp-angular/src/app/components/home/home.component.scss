@@ -1,0 +1,146 @@
+@import '../../styles/shared-styles.scss';
+
+.intro-section {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.home-title {
+    color: #1939bc;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-category {
+    width: 200px;
+}
+
+.search-input {
+    width: 300px;
+    background-color: transparent;
+    margin-right: 10px;
+    border-color: #1939bc;
+    color: #1939bc;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: transparent;
+    color: #1939bc;
+    font-weight: bold;
+    border: #1939bc !important;
+}
+
+.option-text {
+    color: #1939bc;
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1939bc;
+    font-weight: bold;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #1939bc;
+    font-weight: bold;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #1939bc;
+    font-weight: bold;
+}
+
+.product-item {
+    background-color: transparent;
+    border: 5px solid #1939bc;
+    border-radius: 10%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    color: #1939bc;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #1939bc;
+    font-weight: bold;
+}
+
+.product-warranty {
+    color: transparent;
+}
+
+.product-price {
+    color: #1939bc;
+}
+
+.product-rating {
+    color: #FFD700;
+    margin-top: 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.space-x {
+    margin: 0 5px;
+    /*margin-top, margin-right, margin-bottom, margin-left*/
+}
+
+.page-number {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #1939bc;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+.page-number.active {
+    background-color: transparent !important;
+    color: #1939bc;
+    border-color: #1939bc;
+}
+
+.btn-primary {
+    background-color: #1939bc;
+    border-color: #1939bc;
+}
+
+.btn.btn-primary {
+    margin-left: 10px;
+}
+
+.button-text {
+    color: #fcfcfc;
+}
+
+.btn-primary:focus {
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    font-weight: bold;
+}

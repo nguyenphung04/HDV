@@ -1,0 +1,15 @@
+1. Giải nén 2 file
+2. Tạo csdl shopapp và insert câu lệnh sql ( Lưu ý file application.yml để connect, tùy chỉnh lại với MySQL đang sử dụng)
+3. Chạy dự án frontend: 
+	+ Node js 18.16.1 LTS
+	+ Sử dụng yarn install ( không dùng npm insall )
+	+ Sử dụng @angular/cli 15
+4. Phân công công việc: 
+ - Nguyên: Sửa trang Categories thành trang Staff - Quản lý người dùng trong hệ thống
+	+ Hiển thị 1 table gồm các thông tin người dùng trong hệ thống (Có phân trang)
+	+ Chức năng yêu cầu: Thêm, Sửa, Xóa, View Detail
+ - Thái: Sửa trang Products thành trang Products - Quản lý sản phẩm trong hệ thống
+ 	+ Hiển thị 1 table gồm các thông tin sản phẩm trong hệ thống (Có phân trang)
+	+ Chức năng yêu cầu: Thêm, Sửa, Xóa, View Detail
+ - Tùng: Thêm một trang chủ chung cho trang Dashboard.
+	+ Vẽ 2 biểu đồ Chart JS: Sử dụng data từ Orders: Có thể là Piechart với thuộc tính trạng thái, hoặc BarChart với giá trị order
