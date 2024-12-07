@@ -40,12 +40,10 @@ export class UserAdminComponent implements OnInit {
     this.staffService.getAllUsers(keyword, page, limit).subscribe({
       next: (response: any) => {
         console.log('API response:', response);  // Log dữ liệu trả về từ API
-  
-        // Chuyển đổi trường date_of_birth từ timestamp thành định dạng ngày tháng
         this.users = response.content.map((user: any) => {
           if (user.date_of_birth) {
-            const dateOfBirth = new Date(user.date_of_birth); // Chuyển timestamp thành đối tượng Date
-            user.date_of_birth = `${dateOfBirth.getDate()}/${dateOfBirth.getMonth() + 1}/${dateOfBirth.getFullYear()}`; // Định dạng ngày tháng
+            const dateOfBirth = new Date(user.date_of_birth); 
+            user.date_of_birth = `${dateOfBirth.getDate()}/${dateOfBirth.getMonth() + 1}/${dateOfBirth.getFullYear()}`;
           }
           return user;
         });

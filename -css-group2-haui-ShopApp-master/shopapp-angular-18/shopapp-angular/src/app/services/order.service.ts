@@ -44,4 +44,9 @@ export class OrderService {
     const url = `${environment.apiBaseUrl}/orders/${orderId}`;
     return this.http.delete(url, { responseType: 'text' });
   }
+  getOrderStatusCounts(): Observable<any> {
+    const url = `${this.apiUrl}/status-counts`;
+    return this.http.get<any>(url);
+  }
+  
 }

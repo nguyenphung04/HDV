@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { OrderResponse } from 'src/app/responses/order/order.response';
 import { Location } from '@angular/common';
+import { ChartOptions, ChartType } from 'chart.js';
 
 @Component({
   selector: 'app-order-admin',
@@ -23,7 +24,6 @@ export class OrderAdminComponent implements OnInit{
   totalPages:number = 0;
   keyword:string = "";
   visiblePages: number[] = [];
-
   constructor(
     private orderService: OrderService,
     private router: Router,

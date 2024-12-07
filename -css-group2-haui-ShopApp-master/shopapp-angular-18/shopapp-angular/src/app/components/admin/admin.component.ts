@@ -40,6 +40,8 @@ export class AdminComponent implements OnInit {
       this.router.navigate(['/admin/users']);
     }else if(componentName=='products') {
       this.router.navigate(['/admin/products']);
+    }else if(componentName=='charts'){
+      this.router.navigate(['/admin/charts'])
     }
     
   }
