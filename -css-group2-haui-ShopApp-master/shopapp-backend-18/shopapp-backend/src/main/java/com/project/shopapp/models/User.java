@@ -84,11 +84,11 @@ public class User extends BaseEntity implements UserDetails {
         return true;
     }
     public void setIsActive(boolean isActive) {
-        this.active = isActive;  // Gán giá trị cho active
+        this.active = isActive; 
     }
     
     public boolean isIsActive() {
-        return active;  // Trả về giá trị của active
+        return active; 
     }
     
 }

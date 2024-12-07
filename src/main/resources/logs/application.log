@@ -77151,3 +77151,577 @@ Security filter chain: [
 2024-12-07 15:06:39.563 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12
 2024-12-07 15:06:39.577 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12
 2024-12-07 15:06:39.579 [http-nio-8088-exec-1] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int); target is of class [com.project.shopapp.controllers.OrderController] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-12-07 18:11:09.790 [http-nio-8088-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for OPTIONS '/api/v1/orders/23':
+
+org.apache.catalina.connector.RequestFacade@4bbe3b0c
+
+servletPath:/api/v1/orders/23
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+accept: */*
+access-control-request-method: DELETE
+access-control-request-headers: authorization
+origin: http://localhost:4200
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 18:11:09.797 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/v1/orders/23
+2024-12-07 18:11:09.806 [http-nio-8088-exec-9] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for DELETE '/api/v1/orders/23':
+
+org.apache.catalina.connector.RequestFacade@1135817f
+
+servletPath:/api/v1/orders/23
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 18:11:09.809 [http-nio-8088-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/v1/orders/23
+2024-12-07 18:11:09.858 [http-nio-8088-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/v1/orders/23
+2024-12-07 18:11:10.090 [http-nio-8088-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for OPTIONS '/api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@3c64be11
+
+servletPath:/api/v1/orders/get-orders-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+accept: */*
+access-control-request-method: GET
+access-control-request-headers: authorization
+origin: http://localhost:4200
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 18:11:10.092 [http-nio-8088-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12
+2024-12-07 18:11:10.099 [http-nio-8088-exec-8] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@4aa16522
+
+servletPath:/api/v1/orders/get-orders-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 18:11:10.101 [http-nio-8088-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12
+2024-12-07 18:11:10.115 [http-nio-8088-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/orders/get-orders-by-keyword?keyword=&page=0&limit=12
+2024-12-07 18:11:10.118 [http-nio-8088-exec-8] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int); target is of class [com.project.shopapp.controllers.OrderController] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2024-12-07 19:31:45.304 [http-nio-8088-exec-10] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for OPTIONS '/api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@2d5af9f2
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+accept: */*
+access-control-request-method: GET
+access-control-request-headers: authorization
+origin: http://localhost:4200
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:45.306 [http-nio-8088-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:45.311 [http-nio-8088-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@720db1ec
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:45.313 [http-nio-8088-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:45.323 [http-nio-8088-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:49.738 [http-nio-8088-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for OPTIONS '/api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12':
+
+org.apache.catalina.connector.RequestFacade@3435cf42
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+accept: */*
+access-control-request-method: GET
+access-control-request-headers: authorization
+origin: http://localhost:4200
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:49.742 [http-nio-8088-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12
+2024-12-07 19:31:49.745 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12':
+
+org.apache.catalina.connector.RequestFacade@131babb6
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:49.750 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12
+2024-12-07 19:31:49.767 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12
+2024-12-07 19:31:51.513 [http-nio-8088-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for OPTIONS '/api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@26eb0c47
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+accept: */*
+access-control-request-method: GET
+access-control-request-headers: authorization
+origin: http://localhost:4200
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:51.517 [http-nio-8088-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing OPTIONS /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:51.521 [http-nio-8088-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@4730837
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:51.524 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:51.543 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:52.809 [http-nio-8088-exec-9] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12':
+
+org.apache.catalina.connector.RequestFacade@3a218c79
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:52.814 [http-nio-8088-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12
+2024-12-07 19:31:52.830 [http-nio-8088-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=1&limit=12
+2024-12-07 19:31:54.146 [http-nio-8088-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for GET '/api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12':
+
+org.apache.catalina.connector.RequestFacade@4174a27d
+
+servletPath:/api/v1/staff/get-staffs-by-keyword
+pathInfo:null
+headers: 
+host: localhost:8088
+connection: keep-alive
+sec-ch-ua-platform: "Windows"
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6Ijk4ODIzNDc0IiwidXNlcklkIjo5LCJzdWIiOiI5ODgyMzQ3NCIsImV4cCI6MTczNjE0Mzk1Nn0.72eT0RWqB4sO6wUPZxxFifWsaLAbk6E-8FRQuqfQqvk
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+origin: http://localhost:4200
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: http://localhost:4200/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: vi,en-US;q=0.9,en;q=0.8
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2024-12-07 19:31:54.148 [http-nio-8088-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12
+2024-12-07 19:31:54.164 [http-nio-8088-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/staff/get-staffs-by-keyword?keyword=&page=0&limit=12

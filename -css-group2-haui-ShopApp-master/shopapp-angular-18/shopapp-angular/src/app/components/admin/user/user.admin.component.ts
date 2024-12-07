@@ -100,4 +100,5 @@ export class UserAdminComponent implements OnInit {
   viewDetails(user: UserResponse) {
     this.router.navigate(['/admin/users', user.id]);
   }
+
 }
